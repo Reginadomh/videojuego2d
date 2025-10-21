@@ -1,0 +1,55 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+#gameCanvas {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('assets/fondol.png');
+  background-size: cover;
+  background-position: center;
+  /* ✅ Cursor corregido */
+  cursor: url("assets/cursorllorona.png") 32 32, auto;
+}
+
+#hud {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  z-index: 10;
+}
+
+#hud h1 {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.instrucciones {
+  font-size: 0.9rem;
+  margin: 5px 0 0 0;
+  color: #ddd;
+}
+
+#footer {
+  text-align: center;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  border-top: 1px solid #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
